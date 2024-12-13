@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centers everything vertically */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* Optional max width for the entire container */
+    width: 100%; /* Makes the container take available width */
+}
+
+.search-input {
+    padding: 10px;
+    flex: 1; /* Makes the input expand to take available space */
+    max-width: 400px; /* Optional: Limits the width of the input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.search-button img {
+    height: 20px;
+}
+
+</style>
+<body>
+    <div class="search">
+        <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Enter city name.... ">
+        <button id="sad" onclick='getWeather()' class="search-button"><img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" style="height: 20px;" alt=""></button>
+    </div>
+    </div>
+</body>
+</html>

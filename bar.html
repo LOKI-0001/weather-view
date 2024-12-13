@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-left: none;
+            background-color: #0078d4;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #005a9e;
+        }
+
+        body {
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button id="but" class="search-button" onclick="darktheme()">Search</button>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto fugit animi ea distinctio optio aperiam
+        laborum nam expedita fuga! Perferendis optio provident sint architecto quisquam nam aut, officia magni! Culpa
+        reiciendis dolore non, voluptas dignissimos at voluptates iusto et ea, magni quos quidem neque esse ipsam veniam
+        cum eos debitis accusamus? Illum illo aliquam minima facilis aliquid porro architecto harum earum, sequi animi,
+        repellendus nulla. Eum eveniet minus incidunt facilis eius! Minima voluptate cupiditate eius id officia
+        accusantium tenetur, laborum aperiam eligendi sequi dolorem libero minus aliquam eaque dolor. Adipisci rem natus
+        cum necessitatibus quidem officiis itaque ratione? Nemo, quaerat!</p>
+</body>
+<script>
+    let body = document.getElementById('body')
+    const dark = document.getElementById('but');
+    // dark.addEventListener('click', darktheme());
+    function darktheme() {
+        if (body.style.backgroundColor != "black") {
+
+
+            body.style.backgroundColor = "black";
+            body.style.color = "white";
+            document.body.style.backgroundImage = "url('wind.gif')"
+            document.body.style.backgroundSize = "cover"
+            document.body.style.backgroundRepeat = "no-repeat"
+        }
+        else  {
+
+            body.style.backgroundColor = "white";
+            body.style.color = "black";
+            document.body.style.backgroundImage = "url('wind2.gif')"
+            document.body.style.backgroundSize = "cover"
+            document.body.style.backgroundRepeat = "no-repeat"
+        }
+
+    }
+</script>
+
+</html> 

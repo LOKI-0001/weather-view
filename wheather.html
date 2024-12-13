@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="right">Wheather App</div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+        </nav>
+    </header>
+    <main style="margin-left: 0%; margin-top: 0px; text-align: center;">
+        <div style="margin: 100px 0px 30px 575px;" class="search">
+           <!-- <input class="bar" type="text" id="searchInput" placeholder="Search...">
+            <button style="border: 0px; background-color: white;" onclick="searchFunction()"> <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+                    style="height: 20px;" alt="search"></button>
+        </div>-->
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Enter city name.... ">
+            <button id="sad" onclick='getWeather()' class="search-button"><img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" style="height: 20px;" alt=""></button>
+        </div>
+        </div>
+        <div id="result"></div>
+        <script src="script.js"></script>
+   
+    </main>
+    <main class="circle">
+        <div id="cir1" class="cir">HELLO,</div>
+        <div id="cir2" class="cir">CHECK</div>
+        <div id="cir3" class="cir">WHEATHER</div>
+       
+    </main>
+</body>
+
+</html>

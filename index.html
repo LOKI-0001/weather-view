@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Ephesis&family=Gotu&family=Potta+One&family=Protest+Revolution&family=Zen+Tokyo+Zoo&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right" style="  font-family: Protest Revolution, serif;
+            font-weight: 400;
+            font-style: normal; font-size: 40px;">Wheather View</div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="initial" style="text-align: center; padding: 131px 0 100px 0;">
+            <div>
+                <span style="font-size: 40px; font-family: Alex Brush, serif;
+                font-weight: 400;
+                font-style: normal; justify-content: center; display: flex;padding: 0 0 30px;">
+                    <h4 style="background-color: #121538; width: 28%;">
+                        Welcome
+                    </h4>
+                </span>
+                <span style="font-size: 40px; font-family: Alex Brush, serif;
+                font-weight: 400;
+                font-style: normal; justify-content: center; display: flex; padding: 0 0 30px;">
+                    <h4 style="background-color: #121538; width: 28%;">
+                        to
+                    </h4>
+                </span>
+                <span style="padding: 0px 30px 50px 30px ; font-size: 35px;  font-family: Protest Revolution, sans-serif;
+                font-weight: 400;
+                font-style: normal; color: #ffffff; display: flex; justify-content: center;">
+                    <h2 style="background-color: #121538; width: 48%;">Weather View</h2>
+                </span>
+            </div>
+            <div class="sear">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Enter city name.... ">
+                    <button id="sad" onclick="getWeather('searchInput')" class="search-button"><img
+                            src="https://cdn-icons-png.flaticon.com/512/54/54481.png" style="height: 20px;"
+                            alt=""></button>
+                </div>
+            </div>
+            <div class="credit">
+                <h1 style="padding: 200px 0 0 0 ; font-family: Zen Tokyo Zoo, system-ui;
+                font-weight: 400;
+                font-style: normal; ">
+                   <u> Designed and developed by Vivek Jha . All rights reserved © 2024.</u>
+                </h1>
+            </div>
+
+        </section>
+        <section id="final" style="display: none;">
+            <span style="margin-left: 0%; margin-top: 0px; text-align: center;">
+                <div style="margin: 100px 0px 30px 0px;" class="sear">
+                    <!-- <input class="bar" type="text" id="searchInput" placeholder="Search...">
+            <button style="border: 0px; background-color: white;" onclick="searchFunction()"> <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+                    style="height: 20px;" alt="search"></button>
+        </div>-->
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput1" placeholder="Enter city name.... ">
+                        <button id="sad" onclick="getWeather('searchInput1')" class="search-button"><img
+                                src="https://cdn-icons-png.flaticon.com/512/54/54481.png" style="height: 20px;"
+                                alt=""></button>
+                    </div>
+                </div>
+                <div id="result"></div>
+                <script src="./script.js"></script>
+
+            </span>
+            <span class="circle">
+                <div id="cir1" class="cir">HELLO,</div>
+                <div id="cir2" class="cir">CHECK</div>
+                <div id="cir3" class="cir">WHEATHER</div>
+
+            </span>
+        </section>
+    </main>
+</body>
+
+</html>
